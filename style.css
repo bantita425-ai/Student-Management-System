@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Header & Typography */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h2, h4 {
+    color: #007bff; /* น้ำเงิน */
+}
+
+/* Buttons */
+.btn-add, .btn-primary, .btn-cancel, .btn-detail, .btn-edit, .btn-delete, .btn-back {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Primary/Add (Blue) */
+.btn-primary, .btn-add {
+    background-color: #007bff; /* น้ำเงินเข้ม */
+    color: #fff;
+}
+.btn-primary:hover, .btn-add:hover {
+    background-color: #0056b3;
+}
+
+/* Edit (Yellow/Orange) */
+.btn-edit, .btn-detail {
+    background-color: #007bff; /* เหลือง */
+    color: #333;
+    margin-right: 5px;
+}
+.btn-edit:hover, .btn-detail:hover {
+    background-color: #0056b3;
+}
+
+/* Delete (Red) */
+.btn-delete {
+    background-color: #dc3545; /* แดง */
+    color: #fff;
+}
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+/* Cancel/Back */
+.btn-cancel, .btn-back {
+    background-color: #6c757d; /* เทา */
+    color: #fff;
+}
+
+/* Student List (Index Page) */
+.student-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.student-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-left: 5px solid #007bff; /* น้ำเงินเป็นแถบข้าง */
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.student-card .actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Forms (Add/Edit) */
+.student-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.student-form fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.student-form legend {
+    font-weight: bold;
+    color: #007bff;
+    padding: 0 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input[type="text"], .form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Detail Page */
+.detail-card {
+    padding: 20px;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    background-color: #f9f9ff;
+}
+.detail-group {
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+}
+.detail-group h4 {
+    margin-top: 0;
+    font-size: 1.1em;
+}
